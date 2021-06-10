@@ -8,8 +8,8 @@ import { BsPersonFill } from 'react-icons/bs'
 const HeaderContact = () => {
  return (
   <div
-   className=" flex bg-black pr-3 text-white
-     py-3  items-center  justify-end"
+   className=" flex bg-black pr-28 text-white
+      h-12  items-center  justify-end "
   >
    {/* Email */}
    <div className="div pr-10 flex items-center    ">

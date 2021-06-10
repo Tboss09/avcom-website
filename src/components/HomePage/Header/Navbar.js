@@ -4,20 +4,22 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
  const links = [
-  'products',
-  'application',
-  'casestudies',
-  'resources',
-  'aboutus',
+  'Products',
+  'Application',
+  'Case studies',
+  'Resources',
+  'About us',
  ]
- return (
-  <div className="flex justify-between bg-red-300 px-5 items-center h-20 mx-auto">
-   <NavLink to="/" className="logo">
-    <img src={AvcommLogo} alt="Company's Logo" />
-   </NavLink>
+ return ( 
+  <nav className="flex  items-center h-20 ">
+   <div className="logo w-3/12  flex justify-center">
+    <NavLink to="/">
+     <img src={AvcommLogo} alt="Company's Logo" />
+    </NavLink>
+   </div>
 
    {/* Logo */}
-   <ul className="flex">
+   <ul className="flex justify-between  w-6/12">
     {links.map(link => (
      <li key={link}>
       <NavLink to={link}>{link}</NavLink>
@@ -27,11 +29,11 @@ const Navbar = () => {
    {/* navBar */}
 
    {/* Cta */}
-   <div className="cta">
+   <div className="cta w-3/12  flex justify-center  ">
     {' '}
     <button>Request a Quote</button>
    </div>
-  </div>
+  </nav>
  )
 }
 

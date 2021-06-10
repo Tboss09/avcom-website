@@ -12,6 +12,7 @@
  }
  .main {
   background-image: url(./components/assets/img/avatar02.png);
-  height: 50vh;
+  height: 120vh;
+  @apply bg-no-repeat bg-cover bg-right-top  ;
  }
 }
