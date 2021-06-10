@@ -11,21 +11,19 @@ const Navbar = () => {
   'aboutus',
  ]
  return (
-  <div>
-   <div className="logo">
+  <div className="flex justify-between bg-red-300 px-5 items-center h-20 mx-auto">
+   <NavLink to="/" className="logo">
     <img src={AvcommLogo} alt="Company's Logo" />
-   </div>
+   </NavLink>
 
    {/* Logo */}
-   <div className="Navbar">
-    <ul>
-     {links.map(link => (
-      <li key={link}>
-       <NavLink to={link}>{link}</NavLink>
-      </li>
-     ))}
-    </ul>
-   </div>
+   <ul className="flex">
+    {links.map(link => (
+     <li key={link}>
+      <NavLink to={link}>{link}</NavLink>
+     </li>
+    ))}
+   </ul>
    {/* navBar */}
 
    {/* Cta */}

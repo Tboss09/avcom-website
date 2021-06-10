@@ -4,12 +4,12 @@ import Navbar from './Navbar'
 
 const Header = () => {
  return (
-  <div>
+  <header>
    {/* Black header at the top */}
    <HeaderContact />
    {/* Black header at the top */}
    <Navbar />
-  </div>
+  </header>
  )
 }
 

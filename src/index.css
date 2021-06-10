@@ -11,7 +11,7 @@
   font-family: 'Inter', sans-serif;
  }
  .main {
-  background: url('./components/assets/img/avatar02.png');
-  height: 20vh;
+  background-image: url(./components/assets/img/avatar02.png);
+  height: 50vh;
  }
 }
