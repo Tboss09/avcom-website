@@ -2,20 +2,20 @@ import React from 'react'
 
 // External Files
 import { AiOutlineMail } from 'react-icons/ai'
+import { IoIosCall } from 'react-icons/io'
 
 const HeaderContact = () => {
  return (
   <div>
    {/* Email */}
    <div className="div">
-     <AiOutlineMail />
-
-    <span></span>
+    <AiOutlineMail />
+    <span>Become a reseller: sales@avcomm.us</span>
    </div>
 
    {/* telephone */}
    <div className="div">
-    <span></span>
+    <IoIosCall />
     <span></span>
    </div>
 
