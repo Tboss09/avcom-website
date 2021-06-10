@@ -3,6 +3,8 @@ import React from 'react'
 // External Files
 import { AiOutlineMail } from 'react-icons/ai'
 import { IoIosCall } from 'react-icons/io'
+import { BsPersonFill } from 'react-icons/bs'
+
 
 const HeaderContact = () => {
  return (
@@ -16,13 +18,13 @@ const HeaderContact = () => {
    {/* telephone */}
    <div className="div">
     <IoIosCall />
-    <span></span>
+    <span> 713.933.45.34</span>
    </div>
 
-   {/* Login */}
+   {/* Login  */}
    <div className="div">
-    <span></span>
-    <span></span>
+    <BsPersonFill />
+    <span>Client Login</span>
    </div>
   </div>
  )
