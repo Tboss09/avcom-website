@@ -21,7 +21,7 @@
 
  .headerContact {
   @apply flex bg-black pr-28 text-white
-     h-12 relative  items-center  justify-end;
+     h-16 relative  items-center  justify-end;
  }
  /*Header */
 
@@ -30,11 +30,43 @@
   @apply h-screen;
  }
  .main_bg {
-  background-image: url(./components/assets/img/avatar02.png);
+  background: linear-gradient(
+    0deg,
+    rgba(17, 40, 117, 0.17),
+    rgba(17, 40, 117, 0.17)
+   ),
+   linear-gradient(208.63deg, rgba(0, 0, 0, 0.4) 51.07%, rgba(0, 0, 0, 0) 83.1%),
+   url(./components/assets/img/avatar02.png);
   z-index: -1;
-  @apply bg-right-top h-full w-full bg-no-repeat bg-cover absolute -top-28;
+  @apply bg-right-top h-full w-full bg-no-repeat bg-cover absolute -top-24;
  }
- /*Main */
 
- /* Home Page */
+ .boxes {
+  @apply pt-24  ml-20  flex  mr-10 mb-10;
+ }
+
+ .box {
+  @apply w-72  bg-otherHeader h-60 mx-3 flex flex-col items-center backdrop-blur-sm rounded hover:bg-header duration-150 ease-out  transition-all  cursor-pointer;
+ }
+ .box_open {
+  @apply h-72  ease-in;
+ }
+ .box_svg {
+  @apply pt-14 pl-8 mr-auto;
+ }
+ .box_text {
+  @apply mr-auto pl-8 pt-6 relative;
+ }
+ .box_text-header {
+  @apply text-2xl leading-tight font-normal w-64  text-white;
+ }
+
+ .box_text-link {
+  @apply text-white transition-all delay-100 underline text-base   right-0 left-10  whitespace-nowrap absolute top-28;
+ }
+}
+@media (min-width: 1200px) {
+ .main {
+  height: 120vh;
+ }
 }
