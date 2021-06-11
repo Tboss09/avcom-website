@@ -11,7 +11,7 @@ const Navbar = () => {
   'About us',
  ]
  return ( 
-  <nav className="flex  items-center h-20 ">
+  <nav className="flex  items-center h-20  z-50  bg-white">
    <div className="logo w-3/12  flex justify-center">
     <NavLink to="/">
      <img src={AvcommLogo} alt="Company's Logo" />

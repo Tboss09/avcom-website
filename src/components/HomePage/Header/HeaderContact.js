@@ -7,10 +7,7 @@ import { BsPersonFill } from 'react-icons/bs'
 
 const HeaderContact = () => {
  return (
-  <div
-   className=" flex bg-black pr-28 text-white
-      h-12  items-center  justify-end "
-  >
+  <div className=" headerContact ">
    {/* Email */}
    <div className="div pr-10 flex items-center    ">
     <AiOutlineMail size="1.6em" className="text-gray-300 mr-1" />
@@ -20,7 +17,7 @@ const HeaderContact = () => {
    </div>
 
    {/* telephone */}
-   <div className="div flex pr-10 items-center  ">
+   <div className="div flex pr-10 items-center   ">
     <IoIosCall size="1.6em" className="text-gray-300 mr-1" />
     <span className="text-sm font-light text-gray-300"> 713.933.4534</span>
    </div>
