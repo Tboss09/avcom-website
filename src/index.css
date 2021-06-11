@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=|Roboto:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +8,7 @@
   height: 100%;
  }
  body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   @apply relative;
  }
  /* Home Page */
@@ -26,12 +26,13 @@
  /*Header */
 
  /*Main */
-
  .main {
+  @apply h-screen;
+ }
+ .main_bg {
   background-image: url(./components/assets/img/avatar02.png);
-  height: 140vh;
   z-index: -1;
-  @apply bg-right-top w-full bg-no-repeat bg-cover absolute -top-28;
+  @apply bg-right-top h-full w-full bg-no-repeat bg-cover absolute -top-28;
  }
  /*Main */
 
