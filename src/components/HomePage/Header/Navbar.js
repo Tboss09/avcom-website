@@ -19,7 +19,7 @@ const Navbar = () => {
    </div>
 
    {/* Logo */}
-   <div className ="w-2/4 ">
+   <div className="w-2/4 ">
     <ul className="flex justify-evenly w-11/12 mx-auto">
      {links.map(link => (
       <li key={link}>
@@ -34,7 +34,9 @@ const Navbar = () => {
 
    <div className="cta w-1/4 flex justify-center">
     {' '}
-    <Link to ="requestQuote"     className="py-4  w-48 bg-btn hover:bg-header rounded
+    <Link
+     to="requestQuote"
+     className="py-4  w-44 bg-btn hover:bg-header rounded
      text-white  transition ease-in duration-200 text-center text-base  shadow-md focus:outline-none font-normal"
     >
      Request a quote

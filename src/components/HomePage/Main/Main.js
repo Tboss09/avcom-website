@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import HomeBody from './Body/HomeBody'
 import Boxes from './Boxes/Boxes'
 // import Boxes from './Boxes'
 
@@ -34,6 +35,9 @@ const Main = () => {
    {/* BOxes */}
    <Boxes />
    {/* BOxes */}
+   {/* Body */}
+   <HomeBody />
+   {/* Body */}
   </main>
  )
 }
