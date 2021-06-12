@@ -4,16 +4,20 @@ module.exports = {
  theme: {
   extend: {
    colors: {
-    "text": '#112875',
-    "header": '#00269E',
-    "btn": '#02175B',
-    "otherHeader": 'rgba(0, 12, 50, 0.5)',
+    text: '#112875',
+    header: '#00269E',
+    btn: '#02175B',
+    otherHeader: 'rgba(0, 12, 50, 0.5)',
    },
- 
+   screens: {
+    'mini-laptop': '1300px',
+   },
   },
  },
  variants: {
-  extend: {},
+  extend: {
+    width: ['first']
+  },
  },
  plugins: [],
 }

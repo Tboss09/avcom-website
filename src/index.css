@@ -11,12 +11,12 @@
  }
  /* App Background */
  .header {
-  @apply relative;
+  @apply relative h-screen;
  }
  .header__BgImage {
   background-image: url('components/assets/img/avatar02.png');
   @apply bg-cover flex items-center   bg-no-repeat absolute  bg-left-top -top-4 right-0 left-0;
-  height: 100vh;
+  height: 105vh;
   z-index: -5;
  }
 
@@ -29,15 +29,26 @@
  }
 
  .text_text p {
-  @apply text-xl  w-10/12 mb-8;
+  @apply text-xl  w-11/12 mb-8;
  }
 
  .text__btn a {
   @apply py-4 px-16  text-btn bg-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-1 focus:ring-offset-2 rounded;
  }
+ /* header Shwocase */
+ .header_ProductShowcase {
+  @apply absolute   bottom-24 ml-20    mini-laptop:-bottom-32 flex;
+ }
+ .header_ProductShowcase_box {
+  @apply bg-header h-56 w-64  mx-2 pt-10 pl-8;
+ }
+ .header_ProductShowcase_box {
+  
+ }
 }
+
 @media screen and (min-width: 1300px) {
  .header__BgImage {
-  height: 120vh;
+  height: 130vh;
  }
 }
