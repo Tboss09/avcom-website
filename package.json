@@ -19,6 +19,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "git": "git add -A",
     "push": "git push origin master",
     "eject": "react-scripts eject"
   },

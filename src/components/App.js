@@ -1,16 +1,9 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import Header from './HomePage/Header/Header'
-import Main from './HomePage/Main/Main'
+import Header from './Home/Header/Header'
 const App = () => {
  return (
   <>
-   <Switch>
-    <Route exact path="/">
-     <Header />
-     <Main />
-    </Route>
-   </Switch>
+   <Header />
   </>
  )
 }

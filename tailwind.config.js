@@ -9,6 +9,7 @@ module.exports = {
     "btn": '#02175B',
     "otherHeader": 'rgba(0, 12, 50, 0.5)',
    },
+ 
   },
  },
  variants: {
