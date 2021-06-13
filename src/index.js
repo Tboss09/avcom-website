@@ -11,10 +11,10 @@ import './tailwindOthers.css'
 import App from './components/App'
 
 ReactDOM.render(
- <React.StrictMode>
   <Router>
+ <React.StrictMode>
    <App />
-  </Router>
- </React.StrictMode>,
+ </React.StrictMode>
+  </Router>,
  document.getElementById('root')
 )

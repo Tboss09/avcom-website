@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 @layer utilities {
  html,
  body {
@@ -11,44 +11,162 @@
  }
  /* App Background */
  .header {
-  @apply relative h-screen;
+  @apply relative h-screen mb-44 max-w-full;
  }
  .header__BgImage {
   background-image: url('components/assets/img/avatar02.png');
-  @apply bg-cover flex items-center   bg-no-repeat absolute  bg-left-top -top-4 right-0 left-0;
-  height: 105vh;
+  @apply bg-cover flex items-center   bg-no-repeat absolute  bg-left-top -top-4 mini-laptop:top-2 right-0 left-0;
+  height: 110vh;
   z-index: -5;
  }
 
  /* Header text */
  .header__text {
-  @apply text-white absolute right-0 left-20 top-64  w-6/12;
+  @apply text-white absolute right-0 left-20 top-64  w-6/12 font-normal;
  }
  .header__text h2 {
-  @apply text-5xl leading-loose;
+  @apply text-5xl  font-medium;
+  line-height: 65px;
  }
 
  .text_text p {
-  @apply text-xl  w-11/12 mb-8;
+  @apply text-xl w-11/12 mb-8  font-light;
+  line-height: 31px;
+  font-style: normal;
  }
 
  .text__btn a {
-  @apply py-4 px-16  text-btn bg-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-1 focus:ring-offset-2 rounded;
+  @apply py-4 px-16  text-btn bg-white w-full transition ease-in duration-200 text-center text-xl font-bold shadow-md focus:outline-none focus:ring-1  focus:ring-offset-2 rounded;
+  line-height: 23px;
  }
- /* header Shwocase */
+ /* header Showcase */
  .header_ProductShowcase {
-  @apply absolute   bottom-24 ml-20    mini-laptop:-bottom-32 flex;
+  @apply absolute   -bottom-14 ml-16 max-w-full  rounded  mini-laptop:-bottom-36 flex items-end;
  }
- .header_ProductShowcase_box {
-  @apply bg-header h-56 w-64  mx-2 pt-10 pl-8;
+
+ .box {
+  @apply bg-otherHeader max-w-full h-52 w-64  mx-2 pt-10 pl-8 cursor-pointer;
  }
- .header_ProductShowcase_box {
-  
+
+ .box h2 {
+  @apply text-2xl text-white font-normal backdrop-blur-sm leading-tight w-9/12 pt-3;
+  font-style: normal;
+ }
+ .box_open {
+  @apply h-72 bg-header;
+ }
+ .box a {
+  @apply text-white underline font-bold text-base;
+  font-style: normal;
+ }
+ .box:nth-child(2) h2,
+ .box:nth-child(4) h2 {
+  @apply w-11/12;
+ }
+ /* main  */
+ .main {
+  background-image: url('components/assets/img/CTA.png');
+  @apply bg-no-repeat bg-right-bottom  bg-cover -mt-1;
+ }
+ /* COntent */
+ .content_header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply pb-4;
+ }
+ .content_text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  width: 74%;
+  text-align: left;
+ }
+ /* Main content */
+ /* Main content */
+ .main_content {
+  @apply bg-white h-full w-11/12 ml-auto pt-12;
+ }
+ .content_with_img_text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  @apply bg-white w-96 shadow-xl h-64 p-8   -ml-12 mt-16 z-50 overflow-hidden;
+  width: 26rem;
+ }
+ .content_with_img_text h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  @apply text-header pb-2;
+ }
+ .content_with_img_text p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #303030;
+  @apply leading-relaxed pb-4;
+ }
+ .content_with_img_text a {
+  color: #112875;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  @apply underline;
+ }
+ /* Fixed element by the side */
+ .fixedElement {
+  @apply absolute  h-20  w-52 -left-20 bg-white shadow-xl mb-10 flex items-center px-4;
+ }
+ .fixedElement span {
+  @apply px-4 bg-red-400 h-12 w-full flex items-center justify-center;
+  background: #e7eeff;
+ }
+ .fixedElement p {
+  @apply text-2xl pl-4;
+  color: #112875;
+ }
+ .top-95 {
+  top: 23.5rem;
+ }
+ /* Featured Products */
+ .featuredProducts {
+  @apply flex w-10/12 mx-auto   mb-10 justify-between;
+ }
+ /* Items Features */
+ .feature {
+  @apply h-96
+      mx-2 bg-white px-2;
+ }
+ .feature_img {
+  @apply flex justify-center mb-4;
+ }
+ .feature_text_header {
+  @apply text-xl font-medium pb-2;
+  font-style: normal;
+  line-height: 21px;
+  color: #112875;
+ }
+ .feature_text_text {
+  @apply text-base font-normal mb-3;
+  font-style: normal;
+  color: #303030;
+  line-height: 27px;
+ }
+ .feature_text_link {
+  @apply mt-10 bg-green-300;
  }
 }
 
 @media screen and (min-width: 1300px) {
  .header__BgImage {
-  height: 130vh;
+  height: 800px;
  }
 }

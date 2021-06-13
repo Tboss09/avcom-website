@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Products = () => {
+ const [style, setStyle] = React.useState(false)
+ const [boxIndex, setBoxIndex] = React.useState('')
+
  const CyberSecurity = [
   <svg
+   key="3"
    width="64"
    height="64"
    viewBox="0 0 64 64"
@@ -48,6 +52,7 @@ const Products = () => {
  ]
  const IndustrialServer = [
   <svg
+   key="888"
    width="64"
    height="64"
    viewBox="0 0 64 64"
@@ -89,6 +94,7 @@ const Products = () => {
  ]
  const IndustrialNetwork = [
   <svg
+   key="455"
    width="64"
    height="64"
    viewBox="0 0 64 64"
@@ -139,6 +145,7 @@ const Products = () => {
  ]
  const SmartDevice = [
   <svg
+   key="093030"
    width="64"
    height="60"
    viewBox="0 0 64 60"
@@ -199,13 +206,32 @@ const Products = () => {
  ]
 
  return (
-  <div className="header_ProductShowcase ">
-   {products.map(({ svgIcon, header, link }) => (
-    <div key={header} className="header_ProductShowcase_box ">
-     <span>{svgIcon}</span>
-     <div className="bg-red-400  ">
-      <h2 className="text-2xl text-white pt-3 bg-red-400">{header}</h2>
-      <Link to={link}>View Products</Link>
+  <div className="header_ProductShowcase product ">
+   {products.map((product, index) => (
+    <div
+     key={product.link}
+     className={`header_ProductShowcase_box box transition-all  ${
+      boxIndex === index && style ? 'box_open ease-in' : 'ease-out'
+     }`}
+     onMouseEnter={e => {
+      setStyle(true)
+      setBoxIndex(index)
+      console.log(product.header, 'mouse entered')
+     }}
+     onMouseLeave={e => {
+      setBoxIndex()
+      setStyle(false)
+     }}
+    >
+     <span>{product.svgIcon}</span>
+     <div className=" product_box">
+      <h2 className="">{product.header}</h2>
+      <Link
+       to={product.link}
+       className={`transition-all pt-4 ${boxIndex === index && style ? 'block' : 'hidden'}`}
+      >
+       View Products
+      </Link>
      </div>
     </div>
    ))}

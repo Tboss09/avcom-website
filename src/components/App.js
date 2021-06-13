@@ -1,11 +1,21 @@
 import React from 'react'
-import { Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Header from './Home/Header/Header'
+import HeaderContact from './Home/Header/HeaderContact'
+import Nav from './Home/Header/Nav'
+import Main from './Home/Main/Main'
 const App = () => {
  return (
   <>
+   <HeaderContact />
+   <Nav />
    <Switch>
-    <Header />
+    <Route path="/333">kdkdk</Route>
+
+    <Route path="/">
+     <Header />
+     <Main />
+    </Route>
    </Switch>
   </>
  )

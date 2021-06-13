@@ -10,7 +10,7 @@ module.exports = {
     otherHeader: 'rgba(0, 12, 50, 0.5)',
    },
    screens: {
-    'mini-laptop': '1300px',
+    'mini-laptop': '1366px',
    },
   },
  },
