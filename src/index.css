@@ -138,12 +138,12 @@
  }
  /* Featured Products */
  .featuredProducts {
-  @apply flex w-10/12 mx-auto   mb-10 justify-between;
+  @apply flex    mb-10 justify-between;
  }
  /* Items Features */
  .feature {
-  @apply h-96
-      mx-2 bg-white px-2;
+  @apply mx-2 bg-white px-2;
+  height: 25rem;
  }
  .feature_img {
   @apply flex justify-center mb-4;
@@ -161,7 +161,10 @@
   line-height: 27px;
  }
  .feature_text_link {
-  @apply mt-10 bg-green-300;
+  @apply mt-2   h-12 flex pl-4 items-center  bg-header hover:bg-btn
+  focus:ring-header focus:ring-offset-header text-white w-full transition ease-in duration-200 text-center text-base font-bold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-1      rounded;
+  font-style: normal;
+
  }
 }
 
