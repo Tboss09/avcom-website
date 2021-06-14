@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Header from './Home/Header/Header'
 import HeaderContact from './Home/Header/HeaderContact'
 import Nav from './Home/Header/Nav'
+import LogoGroups from './Home/LogoGroup/LogoGroups'
 import Main from './Home/Main/Main'
 const App = () => {
  return (
@@ -15,6 +16,7 @@ const App = () => {
     <Route path="/">
      <Header />
      <Main />
+     <LogoGroups/>
     </Route>
    </Switch>
   </>
