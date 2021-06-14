@@ -68,6 +68,9 @@
   background-image: url('components/assets/img/CTA.png');
   @apply bg-no-repeat bg-right-bottom  bg-cover -mt-1 pb-5;
  }
+ /* Main Content
+ */
+
  /* COntent */
  .content_header {
   font-family: 'Open Sans', sans-serif;
@@ -97,7 +100,7 @@
  .content_with_img_text {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  @apply bg-white w-96 shadow-xl h-64 p-8   -ml-12 mt-16 z-50 overflow-hidden;
+  @apply bg-white w-96 shadow-2xl h-64 p-8   -ml-12 mt-16 z-50 overflow-hidden;
   width: 26rem;
  }
  .content_with_img_text h4 {
@@ -123,10 +126,10 @@
  }
  /* Fixed element by the side */
  .fixedElement {
-  @apply absolute  h-20  w-52 -left-20 bg-white shadow-xl mb-10 flex items-center px-4;
+  @apply absolute  h-20  w-56 -left-20 bg-white shadow-xl mb-10 flex items-center px-4;
  }
  .fixedElement span {
-  @apply px-4 bg-red-400 h-12 w-full flex items-center justify-center;
+  @apply px-4  h-12 w-full flex items-center justify-center;
   background: #e7eeff;
  }
  .fixedElement p {
@@ -143,7 +146,7 @@
  /* Items Features */
  .feature {
   @apply mx-2 bg-white p-2;
-  height: 26rem ;
+  height: 27.5rem;
  }
  .feature_img {
   @apply flex justify-center mb-4;
@@ -154,7 +157,7 @@
   line-height: 21px;
   color: #112875;
  }
- 
+
  .feature_text_text {
   @apply text-base font-normal mb-3;
   font-style: normal;
@@ -178,6 +181,30 @@
  }
  .logoGroup_text {
   @apply text-center;
+ }
+ /* Final cta for users  */
+ .main_finalCta {
+  background-image: url('components/assets/img/CTA.png');
+  @apply h-96 text-white flex flex-col items-center justify-center my-10 bg-cover bg-no-repeat bg-right-top;
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+ }
+ .finalCta {
+  @apply flex items-center flex-col;
+ }
+ .finalCta h2 {
+  @apply text-5xl font-semibold w-8/12 mx-auto text-center;
+  line-height: 62px;
+ }
+ .finalCta p {
+  @apply text-xl p-4;
+ }
+ .finalCta_btn {
+  @apply pt-4;
+ }
+ .finalCta_btn .btn {
+  @apply h-16  px-10 py-3 text-btn
+     bg-white w-full transition ease-in duration-200 text-center text-base font-bold rounded shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2;
  }
 }
 

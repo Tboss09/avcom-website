@@ -7,6 +7,7 @@ module.exports = {
     text: '#112875',
     header: '#00269E',
     btn: '#02175B',
+    'footer': '#F0F0F0',
     otherHeader: 'rgba(0, 12, 50, 0.5)',
    },
    screens: {

@@ -1,5 +1,8 @@
+import LogoGroups from '../LogoGroup/LogoGroups'
 import BodyText from './BodyText'
 import FeaturedProduct from './FeaturedProduct'
+import FinalCta from './FinalCta'
+import LatestNews from './LatestNews'
 
 const Main = () => {
  return (
@@ -8,6 +11,10 @@ const Main = () => {
    <BodyText />
    <FeaturedProduct/>
       </div>
+     <LogoGroups/>
+     <LatestNews/>
+     <FinalCta/>
+
   </main>
  )
 }
