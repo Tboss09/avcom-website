@@ -193,7 +193,7 @@ const UseBodyText = () => {
  ]
 
  function SampleNextArrow(props) {
-  const { className, style, onClick } = props
+  const { className,  onClick } = props
   return (
    <div className={className} onClick={onClick}>
     <svg
@@ -261,7 +261,7 @@ const UseBodyText = () => {
  }
 
  function SamplePrevArrow(props) {
-  const { className, style, onClick } = props
+  const { className, onClick } = props
   return (
    <div className={className} onClick={onClick}>
     <svg

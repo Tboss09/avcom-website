@@ -9,7 +9,7 @@ module.exports = {
     btn: '#02175B',
     textGray: '#515151',
     footer: '#F0F0F0',
-    link:"#303030",
+    link: '#303030',
     textBlack: '#242424',
     otherHeader: 'rgba(0, 12, 50, 0.5)',
    },
@@ -24,7 +24,8 @@ module.exports = {
  },
  variants: {
   extend: {
-   width: ['first'],
+   backgroundColor: ['first', 'odd'],
+   textColor: ['first'],
   },
  },
  plugins: [],

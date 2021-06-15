@@ -1,5 +1,6 @@
 import React from 'react'
-import { Route, Switch} from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+import Application from './Application/Application'
 import Footer from './Home/Footer/Footer'
 import Header from './Home/Header/Header'
 import HeaderContact from './Home/Header/HeaderContact'
@@ -21,9 +22,12 @@ const App = () => {
     <Route path="/products">
      <Products />
     </Route>
+
+    <Route path="/applications">
+     <Application />
+    </Route>
    </Switch>
    <Footer />
-
   </>
  )
 }

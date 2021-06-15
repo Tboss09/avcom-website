@@ -4,7 +4,7 @@ const UseFooter = () => {
  // Svg Links
  const EmailSvg = [
   <svg
-   width="14"
+   width="14" key ="email"
    height="13"
    viewBox="0 0 14 13"
    fill="none"
@@ -18,7 +18,7 @@ const UseFooter = () => {
  ]
  const CallSvg = [
   <svg
-   width="16"
+   width="16" key ="call"
    height="17"
    viewBox="0 0 16 17"
    fill="none"
@@ -35,7 +35,8 @@ const UseFooter = () => {
   </svg>,
  ]
  const LocationSvg = [
-  <svg
+
+  <svg key = "location"
    width="12"
    height="17"
    viewBox="0 0 12 17"
@@ -50,7 +51,7 @@ const UseFooter = () => {
  ]
  const PeopleSvg = [
   <svg
-   width="16"
+   width="16" key = "people"
    height="17"
    viewBox="0 0 16 17"
    fill="none"
@@ -77,6 +78,7 @@ const UseFooter = () => {
   {
    text: 'Technical Documentation',
   },
+
   {
    text: 'Product Certifications',
   },
@@ -135,7 +137,7 @@ const UseFooter = () => {
    text: 'Texas Houston, 2224 bay Area Blvd.',
   },
   {
-   svg: CallSvg,
+   svg: PeopleSvg,
    text: '713.933.4534',
   },
  ]
@@ -146,7 +148,6 @@ const UseFooter = () => {
   productLinks,
   resourceLinks,
   solutionsLinks,
-  addressInfo,
  }
 }
 

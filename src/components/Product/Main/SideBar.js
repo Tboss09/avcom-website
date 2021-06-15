@@ -6,6 +6,7 @@ const SideBar = () => {
  const {  links } = UseProducts ()
 
  return (
+
   <div>
    <div className="relative bg-white dark:bg-gray-800">
     <div className="flex flex-col sm:flex-row sm:justify-around">
@@ -19,7 +20,7 @@ const SideBar = () => {
 
 <a key = {uniqid ()}
 className="hover:text-gray-800 border-b-2 mb-2 border-white  flex items-center p-2 my-0 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 whitespace-nowrap      text-gray-600 dark:text-gray-400 rounded-lg "
-href="#"
+href="/"
 >
 <span className="mx-4 text-lg font-normal">{text}</span>
 <span className="flex-grow text-right"></span>
@@ -32,6 +33,7 @@ href="#"
     </div>
    </div>
   </div>
+ 
  )
 }
 
