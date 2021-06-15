@@ -7,8 +7,15 @@ module.exports = {
     text: '#112875',
     header: '#00269E',
     btn: '#02175B',
-    'footer': '#F0F0F0',
+    textGray: '#515151',
+    footer: '#F0F0F0',
+    link:"#303030",
+    textBlack: '#242424',
     otherHeader: 'rgba(0, 12, 50, 0.5)',
+   },
+   fontFamily: {
+    secondary: ['Open Sans', 'sans-serif'],
+    roboto: ['Roboto', 'sans-serif'],
    },
    screens: {
     'mini-laptop': '1366px',
@@ -17,7 +24,7 @@ module.exports = {
  },
  variants: {
   extend: {
-    width: ['first']
+   width: ['first'],
   },
  },
  plugins: [],

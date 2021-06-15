@@ -101,11 +101,239 @@ const UseBodyText = () => {
     'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
    link: 'heading',
   },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
+  {
+   img: Blog,
+   header: 'Blog Heading',
+   text:
+    'The latest ERPSv2 network ring design is more compatible with commercial communication equipment and can achieve flexible network expansion. ',
+   link: 'heading',
+  },
  ]
+ const ReadArticleSvg = [
+  <svg
+   width="11"
+   height="12"
+   viewBox="0 0 11 12"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+  >
+   <g clip-path="url(#clip0)">
+    <path
+     d="M10.874 5.91374C10.8738 5.91361 10.8737 5.91346 10.8736 5.91333L8.62838 3.67896C8.46018 3.51157 8.18812 3.51219 8.0207 3.68042C7.85329 3.84862 7.85394 4.12068 8.02214 4.28808L9.52957 5.78821H0.429688C0.192371 5.78821 0 5.98058 0 6.21789C0 6.45521 0.192371 6.64758 0.429688 6.64758H9.52954L8.02216 8.14771C7.85396 8.31511 7.85331 8.58717 8.02072 8.75537C8.18815 8.92361 8.46023 8.92419 8.6284 8.75683L10.8736 6.52246C10.8737 6.52233 10.8738 6.52218 10.874 6.52205C11.0423 6.35408 11.0417 6.08115 10.874 5.91374Z"
+     fill="#112875"
+    />
+   </g>
+   <defs>
+    <clipPath id="clip0">
+     <rect
+      width="11"
+      height="11"
+      fill="white"
+      transform="translate(0 0.717773)"
+     />
+    </clipPath>
+   </defs>
+  </svg>,
+ ]
+
+ function SampleNextArrow(props) {
+  const { className, style, onClick } = props
+  return (
+   <div className={className} onClick={onClick}>
+    <svg
+     width="43"
+     height="44"
+     viewBox="0 0 43 44"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg"
+    >
+     <g filter="url(#filter0_d)">
+      <circle cx="21.5" cy="22.2178" r="18.5" fill="white" />
+     </g>
+     <g clipPath="url(#clip0)">
+      <path
+       d="M25.1283 22.1569L19.1621 16.1907C18.9646 16 18.6498 16.0054 18.4591 16.2029C18.273 16.3956 18.273 16.7011 18.4591 16.8937L24.0738 22.5085L18.4591 28.1232C18.2649 28.3173 18.2649 28.6321 18.4591 28.8262C18.6532 29.0203 18.9679 29.0203 19.1621 28.8262L25.1283 22.86C25.3224 22.6658 25.3224 22.3511 25.1283 22.1569Z"
+       fill="#979797"
+      />
+     </g>
+     <defs>
+      <filter
+       id="filter0_d"
+       x="0"
+       y="0.717773"
+       width="43"
+       height="43"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB"
+      >
+       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+       <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+       />
+       <feOffset />
+       <feGaussianBlur stdDeviation="1.5" />
+       <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+       />
+       <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow"
+       />
+       <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow"
+        result="shape"
+       />
+      </filter>
+      <clipPath id="clip0">
+       <rect
+        width="12.9206"
+        height="12.9206"
+        fill="white"
+        transform="translate(15.333 16.0511)"
+       />
+      </clipPath>
+     </defs>
+    </svg>
+   </div>
+  )
+ }
+
+ function SamplePrevArrow(props) {
+  const { className, style, onClick } = props
+  return (
+   <div className={className} onClick={onClick}>
+    <svg
+     width="43"
+     height="44"
+     viewBox="0 0 43 44"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg"
+    >
+     <g filter="url(#filter0_d)">
+      <circle r="18.5" transform="matrix(-1 0 0 1 21.5 22.2178)" fill="white" />
+     </g>
+     <g clipPath="url(#clip0)">
+      <path
+       d="M17.8707 22.1569L23.837 16.1907C24.0345 16 24.3492 16.0054 24.54 16.2029C24.7261 16.3956 24.7261 16.7011 24.54 16.8937L18.9252 22.5085L24.54 28.1232C24.7341 28.3173 24.7341 28.6321 24.54 28.8262C24.3458 29.0203 24.0311 29.0203 23.837 28.8262L17.8707 22.86C17.6766 22.6658 17.6766 22.3511 17.8707 22.1569Z"
+       fill="#979797"
+      />
+     </g>
+     <defs>
+      <filter
+       id="filter0_d"
+       x="0"
+       y="0.717773"
+       width="43"
+       height="43"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB"
+      >
+       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+       <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+       />
+       <feOffset />
+       <feGaussianBlur stdDeviation="1.5" />
+       <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+       />
+       <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow"
+       />
+       <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow"
+        result="shape"
+       />
+      </filter>
+      <clipPath id="clip0">
+       <rect
+        width="12.9206"
+        height="12.9206"
+        fill="white"
+        transform="matrix(-1 0 0 1 27.666 16.0511)"
+       />
+      </clipPath>
+     </defs>
+    </svg>
+   </div>
+  )
+ }
 
  return {
   sideElements,
   allNews,
+  SampleNextArrow,
+  SamplePrevArrow,
+  ReadArticleSvg
  }
 }
 

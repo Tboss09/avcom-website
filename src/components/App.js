@@ -1,24 +1,29 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch} from 'react-router-dom'
 import Footer from './Home/Footer/Footer'
 import Header from './Home/Header/Header'
 import HeaderContact from './Home/Header/HeaderContact'
 import Nav from './Home/Header/Nav'
 import Main from './Home/Main/Main'
+import Products from './Product/Products'
 const App = () => {
  return (
   <>
-   <HeaderContact />
-   <Nav />
+   <header>
+    <HeaderContact />
+    <Nav />
+   </header>
    <Switch>
-    <Route path="/333">kdkdk</Route>
-
-    <Route path="/">
+    <Route exact path="/">
      <Header />
      <Main />
-     <Footer />
+    </Route>
+    <Route path="/products">
+     <Products />
     </Route>
    </Switch>
+   <Footer />
+
   </>
  )
 }

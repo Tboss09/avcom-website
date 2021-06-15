@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 const FinalCta = () => {
  return (
-  <div className="main_finalCta ">
+ 
+ <div className="main_finalCta mt-10 ">
    <div className="finalCta">
     <h2>Final CTA for user to Get a Quote</h2>
     <p>What are you waiting for? It's time to get started.</p>
@@ -18,7 +19,9 @@ const FinalCta = () => {
     </Link>
    </div>
   </div>
+ 
  )
+
 }
 
 export default FinalCta

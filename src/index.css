@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
 @layer utilities {
  html,
  body {
   height: 100%;
+ }
+ a {
+  font-style: normal;
+ }
+ .navLink.active {
+  @apply border-b-2 border-text border-solid pb-1;
  }
  body {
   font-family: 'Roboto', sans-serif;
@@ -185,7 +192,8 @@
  /* Final cta for users  */
  .main_finalCta {
   background-image: url('components/assets/img/CTA.png');
-  @apply h-96 text-white flex flex-col items-center justify-center my-10 bg-cover bg-no-repeat bg-right-top;
+  @apply h-96 text-white flex flex-col items-center justify-center mb-36 bg-cover bg-no-repeat bg-right-top;
+
   font-style: normal;
   font-family: 'Open Sans', sans-serif;
  }
@@ -205,6 +213,55 @@
  .finalCta_btn .btn {
   @apply h-16  px-10 py-3 text-btn
      bg-white w-full transition ease-in duration-200 text-center text-base font-bold rounded shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2;
+ }
+ .latestNews_news {
+  width: 21rem !important;
+  display: flex !important;
+  @apply mx-auto   shadow-xl   flex-col justify-center items-center;
+  height: 28rem;
+ }
+ .latestNews_news h2 {
+  @apply font-semibold text-center py-3 text-xl;
+  color: #112875;
+  font-style: normal;
+ }
+ .latestNews_news p {
+  @apply text-center w-11/12 mx-auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+ }
+ .slider {
+  @apply w-full overflow-hidden;
+ }
+
+ /* Slick Slider  */
+ .slick-track {
+  @apply flex  w-11/12 mx-auto;
+ }
+
+ .slick-prev {
+  @apply left-0;
+ }
+ .slick-next {
+  @apply right-0;
+ }
+ .slick-arrow {
+  @apply absolute  top-60  z-50;
+ }
+
+ .slick-slider {
+  height: 30rem;
+ }
+ .slick-slide {
+  width: 100% !important;
+ }
+ .products_finalCta {
+  @apply flex-row h-52  -mb-10;  
+ }
+ .products_finalCta_btn{
+     @apply pt-0
  }
 }
 

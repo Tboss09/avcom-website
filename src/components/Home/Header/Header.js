@@ -4,13 +4,13 @@ import Products from './Products'
 
 const Header = () => {
  return (
-  <header className="header " id="top">
+  <div className="header " id="top">
    <div className="header__BgImage"></div>
    <HeaderContent />
 
-   {/* Producst Show BOxes */}
+   {/* Product Show BOxes */}
    <Products />
-  </header>
+  </div>
  )
 }
 
