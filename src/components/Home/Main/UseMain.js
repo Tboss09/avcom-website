@@ -20,7 +20,7 @@ const UseBodyText = () => {
 
  const PeopleSvg = [
   <svg
-   key="peoplesvg"
+   key="peoplesjjdjdvg"
    width="32"
    height="28"
    viewBox="0 0 32 28"
@@ -168,12 +168,13 @@ const UseBodyText = () => {
  const ReadArticleSvg = [
   <svg
    width="11"
+   key="Readarticle"
    height="12"
    viewBox="0 0 11 12"
    fill="none"
    xmlns="http://www.w3.org/2000/svg"
   >
-   <g clip-path="url(#clip0)">
+   <g clipPath="url(#clip0)">
     <path
      d="M10.874 5.91374C10.8738 5.91361 10.8737 5.91346 10.8736 5.91333L8.62838 3.67896C8.46018 3.51157 8.18812 3.51219 8.0207 3.68042C7.85329 3.84862 7.85394 4.12068 8.02214 4.28808L9.52957 5.78821H0.429688C0.192371 5.78821 0 5.98058 0 6.21789C0 6.45521 0.192371 6.64758 0.429688 6.64758H9.52954L8.02216 8.14771C7.85396 8.31511 7.85331 8.58717 8.02072 8.75537C8.18815 8.92361 8.46023 8.92419 8.6284 8.75683L10.8736 6.52246C10.8737 6.52233 10.8738 6.52218 10.874 6.52205C11.0423 6.35408 11.0417 6.08115 10.874 5.91374Z"
      fill="#112875"
@@ -193,7 +194,7 @@ const UseBodyText = () => {
  ]
 
  function SampleNextArrow(props) {
-  const { className,  onClick } = props
+  const { className, onClick } = props
   return (
    <div className={className} onClick={onClick}>
     <svg
@@ -220,9 +221,9 @@ const UseBodyText = () => {
        width="43"
        height="43"
        filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB"
+       colorInterpolationFilters="sRGB"
       >
-       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+       <feFlood floodOpacity="0" result="BackgroundImageFix" />
        <feColorMatrix
         in="SourceAlpha"
         type="matrix"
@@ -288,9 +289,9 @@ const UseBodyText = () => {
        width="43"
        height="43"
        filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB"
+       colorInterpolationFilters="sRGB"
       >
-       <feFlood flood-opacity="0" result="BackgroundImageFix" />
+       <feFlood floodOpacity="0" result="BackgroundImageFix" />
        <feColorMatrix
         in="SourceAlpha"
         type="matrix"
@@ -333,7 +334,7 @@ const UseBodyText = () => {
   allNews,
   SampleNextArrow,
   SamplePrevArrow,
-  ReadArticleSvg
+  ReadArticleSvg,
  }
 }
 

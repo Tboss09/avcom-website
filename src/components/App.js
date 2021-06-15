@@ -7,6 +7,7 @@ import HeaderContact from './Home/Header/HeaderContact'
 import Nav from './Home/Header/Nav'
 import Main from './Home/Main/Main'
 import Products from './Product/Products'
+import Resource from './Resources/Resource'
 const App = () => {
  return (
   <>
@@ -25,6 +26,11 @@ const App = () => {
 
     <Route path="/applications">
      <Application />
+    </Route>
+
+
+    <Route path="/resources">
+     <Resource />
     </Route>
    </Switch>
    <Footer />

@@ -1,10 +1,10 @@
 import React from 'react'
 import UseApplication from '../UseApplication'
 import uniqid from 'uniqid'
+import StandingMount from '../../assets/img/StandingMount.png'
 
 const AppBlog = () => {
- const {  AirplaneLargeSvg, AirplaneMedium, StandingMount } =
-  UseApplication()
+ const { AirplaneLargeSvg, AirplaneMedium } = UseApplication()
 
  const products = [
   {
@@ -93,14 +93,20 @@ const AppBlog = () => {
      </p>
     </div>
    </div>
-
-   <div className="flex flex-wrap mb-12 mt-0  dark:text-white font-secondary">
+   <div className="pt-10  ">
+    <h2 className="text-2xl to-textGray w-6/12 text-center font-semibold mx-auto">
+     AVCOMM aviation implemenationquipment and flexible network expansion;{' '}
+    </h2>
+   </div>
+   <div className="flex flex-wrap w-10/12 mr-auto mb-10 mt-0  dark:text-white font-secondary">
     {products.map(({ img, text }) => (
      <div
       key={uniqid()}
       className="w-full   flex flex-col items-center md:w-1/2 mt-6 mb-10   lg:w-3/12 p-1"
      >
-      <div>{StandingMount}</div>
+      <div>
+       <img src={img} alt="A Standing mount" />
+      </div>
       <p className="pt-6 text-center text-xl ">{text}</p>
      </div>
     ))}

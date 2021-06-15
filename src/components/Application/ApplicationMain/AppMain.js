@@ -1,12 +1,16 @@
 import React from 'react'
+import ScheduleQuote from '../../Product/Main/ScheduleQuote'
 import AppBlog from './AppBlog'
 import ApplicationSideBar from './ApplicationSideBar'
 
 const AppMain = () => {
  return (
-  <main className="flex">
-   <ApplicationSideBar />
-   <AppBlog />
+  <main>
+   <div className="flex">
+    <ApplicationSideBar />
+    <AppBlog />
+   </div>
+   <ScheduleQuote />
   </main>
  )
 }

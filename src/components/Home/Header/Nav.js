@@ -6,7 +6,7 @@ const links = [
  'Products',
  'Applications',
  'Case Studies ',
- 'Resourcces',
+ 'Resources',
  'About us',
 ]
 const Nav = () => {
